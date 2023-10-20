@@ -9,7 +9,7 @@ This is the code for performing Curie-Weiss fitting from MPMS data(Moment vs Tem
 25,26th lines: Temperature range for performing Curie-Weiss fitting.
 27th line: Initial value for chi0 when conducting the fitting.
 29th line: When datsave=1, the fitting result is saved in a dat file with the following columns:
-First file("filename"+_susceptability_"compname".dat)
+First file("filename"+_susceptability_+"compname".dat)
 Temperature (K), Magnetic Field (Oe), Magnetic Moment (emu), Molar Susceptibility (emu/Oe mol), and Inverse Susceptibility (emu/Oe mol)^(-1). 
 Second file("filename"+_CWfitting_"compname".dat)
 Temperature (K), Fitting result(emu/Oe mol)^(-1)
@@ -27,7 +27,7 @@ This is the code for normalizing magnetic moments and generating graphs from MPM
 12nd line: Assumed composition.
 13rd line: Number of magnetic ions contained in comp_name.
 15th line: When datsave=1, the fitting result is saved in a dat file with the following columns:
-First file("filename"+_susceptability_"compname".dat)
+First file("filename"+_norm_+"compname".dat)
 Temperature (K), Magnetic Field (Oe), Magnetic Moment (emu), Molar Magnetization (emu/mol). 
 Graph plotting uses magnetic field on the x-axis, molar magnetization on the y-axis.
 16th line: When python_plot=1, the results are output using Python (matplotlib) for plotting.
