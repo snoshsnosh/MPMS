@@ -1,6 +1,5 @@
 def ErrorDetect(input) :
     i = 0
-    # print(input)
     if input < 1 :
         while True :
             if 10**(-(i+1)) <= input < 10**(-i) :
@@ -40,8 +39,7 @@ def WidthFunction(max, min, nn, option) :
                 loopmin += 1
                 if -width*loopmin < min < 0 :
                     break
-
-    if option == 0 :
+    else:
         if min >= 0 :
             width = max/nn
             width = ErrorDetect(width)
@@ -67,7 +65,6 @@ def WidthFunction(max, min, nn, option) :
                 loopmin += 1
                 if -width*loopmin < min < 0 :
                     break
-     # print(width, loopmax, loopmin)
     return width, loopmax, loopmin
 
 
